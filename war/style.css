@@ -1,0 +1,221 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #818181;
+}
+.logotipo{
+	float: left;
+	width: 4.5%;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+img{
+	padding-left: 7%;
+	padding-top: 0px;
+}
+header{
+	background: #000;
+	width: 100%;
+	margin: 20px auto;
+	margin-top: 0px;
+}
+.main, footer{
+	width: 100%;
+	margin: 20px auto;
+}
+header nav{
+	background: #000;
+	width: 95.5%;
+	overflow: hidden;
+}
+header nav ul{
+	list-style: none;
+
+}
+header nav ul li{
+	float: left;
+}
+header nav ul li a{
+	padding: 10px 20px;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+header nav ul li a:hover{
+	background: #860000;
+}
+.main .articles{
+	width: 100%;
+	margin-right: 1.5%;
+	float: left;
+}
+.main .articles article{
+	padding: 20px;
+	background: #DCDCDC;
+	margin-bottom: 20px;
+}
+aside{
+	width: 30%;
+	background: #860000;
+	color:#ccc;
+	float: left;
+	padding: 20px;
+	box-sizing: border-box;
+}
+footer{
+	background: #000;
+	color: #fff;
+	clear: both;
+	padding: 10px 0px;
+	text-align: center;
+	margin-top: 0%;
+	margin-bottom: 0;
+}
+form{
+	width: 85%;
+	padding: 20px;
+	height: auto;
+	margin: auto;
+}
+
+label{
+	font-size: 15px;
+	display: block;
+	width: 100%;
+	font-weight:bold;
+}
+input,select{
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+}
+input:focus{
+	border: 1px solid #1668c4;
+}
+input[type="submit"],input[type="reset"]{
+	margin-bottom: 0px;
+	background: #000;
+	color:#fff;
+	border: none;
+	width: 48.5%;
+	display: inline;
+	font-weight:bold;
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+	background: #ccc;
+	color: #000;
+	cursor: pointer;
+}
+
+
+
+
+#botonera {
+	width: 100%;
+	height: 30px;
+	margin: 0 auto;
+	background: url(img/boton-menu3.jpg) repeat-x; }
+
+.boton {
+	width: 19.88%;
+	height: 30px;
+	float: left;
+	text-align: center;
+	margin-left: 1px;
+	background: url(img/boton-menu.jpg) repeat-x;
+	font-weight: bold;
+	font-size: 75%;
+	line-height: 30px; }
+
+	.boton:hover { background: url(img/boton-menu2.jpg) repeat-x; }
+
+	.boton a {
+		color: white;
+		text-decoration: none;
+		display: block; }
+
+		.boton a:hover { color: black; }
+
+	/*	Desarrollo de los men?s desplegables	*/
+.boton div {
+		position: relative;
+		width: 94.5%;
+		background: url(img/desplegable3.png);
+		font-size: 100%;
+		visibility: hidden;
+		text-align: left;
+		padding: 10px 2px 10px 10px;
+		font: bold 100% arial; }
+
+	.boton:hover div { visibility: visible; }
+
+	.boton ul {
+		margin: 0 10px;
+		padding: 0;
+		list-style-image: url(img/desplegable.png); }
+
+	.boton li a {
+		color: white;
+		text-decoration: none;
+		padding: 3px; }
+
+		.boton li a:hover { color: #fa6; }
+
+
+/*	Desarrollo de la galeria de imagenes	*/
+
+li .min	{
+	background: url(../imagenes/base1.png);
+	width: 75px;
+	height: 64px;
+	padding: 6px 20px 20px 7px;
+	}
+
+#titulos	{
+	padding: 10px;
+	text-align: center;
+	}
+
+#borde	{
+	width: 405px;
+	height: 305px;
+	position: absolute;
+	top: 250px;	/* Provoca la separacion del borde superior */
+	left: 50%;	/* Separa la imagen grande de la pequea */
+	background: url(img/galeria.png);
+	}
+
+.cat	{
+	list-style-type: none;
+	margin: 0 0 10px 20px; /* Eliminacion de vieta en IE6 */
+	padding: 0px; /* Eliminacion de vieta en IE6 */
+	float:left;
+	}
+
+.max{
+	visibility: hidden;
+	position: absolute;
+	top: 20px;	/* Provoca la separacion del borde superior */
+	left: 30%;	/* Separa la imagen grande de la pequea */
+  margin-left: 5px;
+	}
+
+a:hover .max	{
+	visibility: visible;
+	}
+
+
+
+
+
+
+.thumbnail{ position: relative; z-index: 0; }
+.thumbnail:hover{ background-color: transparent; z-index: 50; }
+.thumbnail span{ /* Estilos para la imagen agrandada */ position: absolute; background-color: black; padding: 5px; left: -100px; border: 5px double gray; visibility: hidden; color: #ffffff; text-decoration: none; }
+.thumbnail span img{ border-width: 0; padding: 2px; }
+.thumbnail:hover span{ visibility: visible; top: -100; left: 0px; }

@@ -73,7 +73,7 @@ public class Login2Servlet extends HttpServlet {
  					 + "<meta charset=utf-8;>"
  					 + "<body>"
  					 + "<h1>Usted no se encuentra registrado</h1>"
- 					 +"<a href='"+ us.createLoginURL(req.getRequestURI())+"'> volver </a>"
+ 					 +"<a href='"+ us.createLogoutURL(req.getRequestURI())+"'> volver </a>"
  					 + "</body></html>");	
  		}
  	}

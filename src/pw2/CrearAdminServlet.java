@@ -10,7 +10,7 @@ public class CrearAdminServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		resp.setContentType("text/html");
 		if(getServletContext().getAttribute("alumnos")==null){
-			AlumnosMed admin=new AlumnosMed("icontrerasalcazar@gmail.com","administrador",0);
+			AlumnosMed admin=new AlumnosMed("garyfnc185@gmail.com","administrador",0);
 			ArrayList<AlumnosMed>admin2= new ArrayList<AlumnosMed>();
 			admin2.add(admin);
 			getServletContext().setAttribute("alumnos", admin2);

@@ -1,0 +1,139 @@
+body{
+	background: #818181;
+	font-family: Comic Sans MS,arial, helvetica;
+}
+header{
+	text-align: center;
+}
+address{
+	background: #000;
+	color: #fff;
+	clear: both;
+	padding: 10px 0px;
+	text-align: center;
+	margin: 3%;
+	margin-bottom: 0;
+}
+address a{
+	background: #fff;
+	color: #000;
+	width:100%;
+	font-size:20px;
+}
+address a:hover{
+	background: #373737;
+	color:#fff;
+}
+
+ul.navbar {
+  list-style-type: none;
+   }
+  
+  
+.logotipo{
+	width: 10%;
+	display: inline-block;
+}
+.title{
+	font-size: 50px;
+	display: inline-block;
+	cursor: pointer;
+	color:#000;
+}
+h1{
+	text-align: center;
+	color:#50d0de;
+}
+h2{
+	font-size: 30px;
+}
+
+a{
+	font-size: 30px;
+	text-align:center;
+	display: block;
+	padding: 10px;
+	width: 100%;
+	text-decoration: none;
+	color:#fff;
+}
+a:hover{
+	background: #FF6565;
+	color: #0729b1;
+}
+form{
+	width: 60%;
+	padding: 0px;
+	height: auto;
+	margin: auto;
+}
+
+label{
+	font-size: 15px;
+	display: block;
+	width: 100%;
+	font-weight:bold;
+}
+input,select{
+	margin-bottom: 20px;
+	width: 97.5%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+}
+input:focus{
+	border: 1px solid #1668c4;
+}
+input[type="submit"],input[type="reset"]{
+	margin-bottom: 0px;
+	background: #000;
+	color:#fff;
+	border: none;
+	width: 48.5%;
+	display: inline;
+	font-weight:bold;
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+	background: #860000;
+	cursor: pointer;
+	box-shadow: inset 0 0 0 3px #000;
+	}
+	
+	table{
+	border: 1px solid #1668c4;
+	background:#d1d1d1;
+	color:#860000;
+	}
+	tr.titulo{
+	border: 1px solid #1668c4;
+	background:#860000;
+	color:#fff;}
+	
+	input[type="button"]{
+	margin-top: 4px;
+
+	background: #000;
+	color:#fff;
+	border: none;
+	width: 97.5%;
+	display: inline;
+	font-weight:bold;
+}
+input[type="button"]:hover{
+	background: #860000;
+	cursor: pointer;
+ 	box-shadow: inset 0 0 0 3px #000;
+}
+a.bu{
+	font-size: 20px;
+	text-align:left;
+	display: block;
+	padding: 10px;
+	width: 100%;
+	text-decoration: none;
+	color:#407BA8;
+}
+a.bu:hover{
+	background: none;
+	color:#800000;
+}

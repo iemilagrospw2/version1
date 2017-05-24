@@ -12,6 +12,77 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>IeMilagros</servlet-name>
 		<url-pattern>/iemilagros</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>SalirServlet</servlet-name>
+		<servlet-class>pw2.SalirServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SalirServlet</servlet-name>
+		<url-pattern>/salir</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Login2Servlet</servlet-name>
+		<servlet-class>pw2.Login2Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login2Servlet</servlet-name>
+		<url-pattern>/login2</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CrearAdminServlet</servlet-name>
+		<servlet-class>pw2.CrearAdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CrearAdminServlet</servlet-name>
+		<url-pattern>/crearAdmin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>BuscarServlet</servlet-name>
+		<servlet-class>pw2.BuscarServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BuscarServlet</servlet-name>
+		<url-pattern>/buscar</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegistrarServlet</servlet-name>
+		<servlet-class>pw2.RegistrarServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistrarServlet</servlet-name>
+		<url-pattern>/registrar</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditarServlet</servlet-name>
+		<servlet-class>pw2.EditarServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditarServlet</servlet-name>
+		<url-pattern>/editar</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>VaciarServlet</servlet-name>
+		<servlet-class>pw2.VaciarServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VaciarServlet</servlet-name>
+		<url-pattern>/vaciarServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegistrarEditarServlet</servlet-name>
+		<servlet-class>pw2.RegistrarEditarServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistrarEditarServlet</servlet-name>
+		<url-pattern>/registrareditar</url-pattern>
+	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>principal.html</welcome-file>
 	</welcome-file-list>

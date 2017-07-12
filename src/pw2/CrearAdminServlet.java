@@ -17,6 +17,7 @@ public class CrearAdminServlet extends HttpServlet {
 			resp.sendRedirect("login2");
 		}
 		else
+			
 			resp.sendRedirect("login2");
 	}
 }

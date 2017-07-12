@@ -30,6 +30,32 @@ public class RegistrarServlet extends HttpServlet {
 			alumnos.add(nuevo);//y lo agrega
 			getServletContext().setAttribute("alumnos", alumnos);
 		}
+		
+		if (tipo.equals("profesor")) {
+			if (getServletContext().getAttribute("profesores") == null) {
+				String profe = new String(correo);
+				ArrayList<String> profeArray = new ArrayList<String>();
+				profeArray.add(profe);
+				getServletContext().setAttribute("profesores", profeArray);
+
+			} else {
+				String profe = new String(correo);
+				ArrayList<String> profeArray = (ArrayList<String>) (getServletContext().getAttribute("profesores"));
+				profeArray.add(profe);
+			}
+		}if (tipo.equals("estudiante")) {
+			if (getServletContext().getAttribute("estudiante") == null) {
+				Alumno e = new Alumno(correo);
+				ArrayList<Alumno> eArray = new ArrayList<Alumno>();
+				eArray.add(e);
+				getServletContext().setAttribute("estudiante", eArray);
+
+			} else {
+				Alumno e = new Alumno(correo);
+				ArrayList<Alumno> eArray = (ArrayList<Alumno>) (getServletContext().getAttribute("estudiante"));
+				eArray.add(e);
+			}
+		}
 		resp.sendRedirect("alumnosMed.jsp");
 		
 	}

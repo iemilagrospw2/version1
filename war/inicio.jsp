@@ -20,84 +20,191 @@
 <html>
   <head>
   	<meta http-equip="Content-type" content="text/html;charset=UTF-8">
-  	<link href="css/default.css" rel="stylesheet" type="text/css">
+  	<link href="estilo.css" rel="stylesheet" type="text/css">
     <title>INICIO</title>
   </head>
   <body>
   <!-- Menu de navegacion -->
+  
+  
+  
+  
   <header id="main-header">
-   <nav>
+   <a id="logo-header" href=""> <span
+		class="site-name">Milagros</span> <span class="site-desc">dedicándonos
+			a la educación</span>
+	</a> <nav>
    <ul id="navbar">
    <%if(sesion.equals("administrador")) {%>
-   <li><a href="buscar.jsp">Buscar</a></li>
-   <li><a href="registrar.jsp">Registrar</a></li>
-   <li><a href="editar.jsp">Editar</a></li>
-   <li><a href="alumnosMed.jsp">Ver</a></li> 
-   <li><a href="salir">Salir</a></li> 
-   </ul>
+   <li><a href="inicio.jsp">Mi cuenta</a></li>
+	<li><a href="<%= us.createLogoutURL("/cerrarsesion")%>">CERRAR SESION</a></li> 
+	</ul>
 	</nav>
 	 </header>
+	 
+	 
+	 <aside>
+	<div align="center">
+		<img id="imagen1" src="milagros.png">
+	</div>
+	<ul>
+		<li><a href="buscar.jsp">
+				<div class="barra"></div>
+				<p class="menu">Buscar</p>
+		</a></li>
+		<li><a href="registrar.jsp">
+				<div class="barra"></div>
+				<p class="menu">Registrar</p>
+		</a></li>
+		<li><a href="editar.jsp">
+				<div class="barra"></div>
+				<p class="menu">Editar</p>
+		</a></li>
+		<li><a href="alumnosMed.jsp">
+				<div class="barra"></div>
+				<p class="menu">Ver</p>
+		</a></li>
+	</ul>
+	</aside>
+	 
 	<div id="fondoFormulario2"></div>
-    <div id="form4">
-       		<h1 align="center">Bienvenido al registro de matriculas de alumnos </h1></br>
-			<h1 align="center">Use el menu de arriba a la derecha</h1>
-			<IMG SRC="admin.png" WIDTH=178 HEIGHT=180 BORDER=2 ALIGN=center>
-	</form>
-	</div>   
-   <footer id="main-footer">
-        <p>Hecho por:<br>-Contreras Iam<br>-Solis Angie<br>-Carpio
-				Yherico<br>-Veliz Diego<br>-Nuñez Gary</p>
+	
+	
+	 <div id="datos">
+		<table WIDTH="700px" HEIGHT="600px" border="0">
+			<tr>
+				<td WIDTH="400px" HEIGHT="200px"><p>Bienvenido al registro de matriculas de alumnos<br>
+					<h3 align="center">Use el menu </h3>
+				</td>
+				<td>
+					<div align="right">
+						<IMG SRC="admin.png" WIDTH=178 HEIGHT=180 BORDER=2 ALIGN=center>
+					</div> 
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	
+	<footer id="main-footer">
+      
     </footer>
   </body>
 </html>
    <%} else if(sesion.equals("estudiante")) {%>
-	<li><a href="salir">Salir</a></li> 
+	<header>
+	<li><a href="Inicio.jsp">Mi cuenta</a></li>
+	<li><a href="<%= us.createLogoutURL("/cerrarsesion")%>">CERRAR SESION</a></li> 
 	</ul>
 	</nav>
-	 </header>
+	 </header id="main-header">
+	 
+	  <aside>
+	<div align="center">
+		<img id="imagen1" src="milagros.png">
+	</div>
+	<ul>
+		<li><a href="subirnotas.jsp">
+				<div class="barra"></div>
+				<p class="menu">Ver calificaciones</p>
+		</a></li>
+	</ul>
+	</aside>
+	 
 	<div id="fondoFormulario2"></div>
-    <div id="form4">
-       		<h1 align="center">Bienvenido alumno </h1></br>
-       		<IMG SRC="alumno.jpg"  WIDTH=178 HEIGHT=180 BORDER=2 ALIGN=center>
-	</form>
-	</div>   
+    
+    
+    <div id="datos">
+		<table WIDTH="700px" HEIGHT="600px" border="0">
+			<tr>
+				<td WIDTH="400px" HEIGHT="200px"><p>Bienvenido alumno<br>
+					</td>
+				<td>
+					<div align="right">
+						<IMG SRC="alumno.jpg"  WIDTH=178 HEIGHT=180 BORDER=2 ALIGN=center>
+					</div> 
+				</td>
+			</tr>
+		</table>
+	</div>
+    
    <footer id="main-footer">
-        <p>Hecho por:<br>-Contreras Iam<br>-Solis Angie<br>-Carpio
-				Yherico<br>-Veliz Diego<br>-Nuñez Gary</p>
+       
     </footer>
   </body>
 </html>
 <%} else if(sesion.equals("profesor")) {%>
-	<li><a href="salir">Salir</a></li> 
+	
+	<li><a href="inicio.jsp">Mi cuenta</a></li>
+	<li><a href="<%= us.createLogoutURL("/cerrarsesion")%>">CERRAR SESION</a></li> 
 	</ul>
 	</nav>
 	 </header>
+	 
+	 <aside>
+	<div align="center">
+		<img id="imagen1" src="milagros.png">
+	</div>
+	<ul>
+		<li><a href="subirnotas.jsp">
+				<div class="barra"></div>
+				<p class="menu">Subir Notas</p>
+		</a></li>
+	</ul>
+	</aside>
+	
+	<div id="datos">
+		<table WIDTH="700px" HEIGHT="600px" border="0">
+			<tr>
+				<td WIDTH="400px" HEIGHT="200px"><p>Bienvenido docente<br>
+					Nombre:Juan Perez<br>Especialidad:Matematica<br>Nivel:Primaria</p></td>
+				<td>
+					<div align="right">
+						<IMG SRC="maestro.png"  WIDTH=178 HEIGHT=180 BORDER=2 ALIGN=center>
+					</div> 
+				</td>
+			</tr>
+			<td WIDTH="400px" HEIGHT="200px"><p>Cursos que enseña:<br>-Logico Matematico<br>-Raz.Matematico</p></td>
+			<tr>
+			</tr>
+		</table>
+	</div>
+	
+	
+	
 	<div id="fondoFormulario2"></div>
-    <div id="form4">
-       		<h1 align="center">Bienvenido docente </h1></br>
-       		<IMG SRC="maestro.png"  WIDTH=178 HEIGHT=180 BORDER=2 ALIGN=center>
-	</form>
-	</div>   
-   <footer id="main-footer">
-        <p>Hecho por:<br>-Contreras Iam<br>-Solis Angie<br>-Carpio
-				Yherico<br>-Veliz Diego<br>-Nuñez Gary</p>
+      
+	<footer id="main-footer">
+       
     </footer>
   </body>
 </html>
 <%} else if(sesion.equals("padre/apoderado")) {%>
-	<li><a href="salir">Salir</a></li> 
+	<li><a href="inicio.jsp">Mi cuenta</a></li>
+	<li><a href="<%= us.createLogoutURL("/cerrarsesion")%>">Salir</a></li> 
 	</ul>
 	</nav>
 	 </header>
 	<div id="fondoFormulario2"></div>
-    <div id="form4">
-       		<h1 align="center">Bienvenido Sr/a. Padre de familia o Apoderado</h1></br>
-       		<IMG SRC="padre.jpg"  WIDTH=178 HEIGHT=180 BORDER=2 ALIGN=center>
-	</form>
-	</div>   
+    
+    
+    
+    <div id="datos">
+		<table WIDTH="700px" HEIGHT="600px" border="0">
+			<tr>
+				<td WIDTH="400px" HEIGHT="200px"><p>Bienvenido Sr/a. Padre de familia o Apoderado<br>
+					Nombre:Juan Perez<br>Especialidad:Matematica<br>Nivel:Primaria</p></td>
+				<td>
+					<div align="right">
+						<IMG SRC="padre.jpg"  WIDTH=178 HEIGHT=180 BORDER=2 ALIGN=center>
+					</div> 
+				</td>
+			</tr>
+		</table>
+	</div>
+    
    <footer id="main-footer">
-        <p>Hecho por:<br>-Contreras Iam<br>-Solis Angie<br>-Carpio
-				Yherico<br>-Veliz Diego<br>-Nuñez Gary</p>
+       
     </footer>
   </body>
 </html>
@@ -110,7 +217,7 @@
 	</head>
 	<body>
 		NO TIENES PERMISO PARA VER ESTA PAGINA
-		<a href="login2">volver</a>
+		<a href="<%= us.createLogoutURL("/cerrarsesion")%>">SALIR</a>
 	</body>
 	</html>
 <%}%>

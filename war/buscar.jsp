@@ -57,8 +57,7 @@
 	</form>
 	</div>
 	   <footer id="main-footer">
-        <p>Hecho por:<br>-Contreras Iam<br>-Solis Angie<br>-Carpio
-				Yherico<br>-Veliz Diego<br>-Nuñez Gary</p>
+       
     </footer>
   </body>
 </html>

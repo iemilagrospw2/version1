@@ -14,7 +14,7 @@
   <head>
   	<meta http-equip="Content-type" content="text/html;charset=UTF-8">
   	<link href="css/default.css" rel="stylesheet" type="text/css">
-    <title>Alumnos de Medicina</title>
+    <title>Alumnos</title>
   </head>
   <body>
   <!-- Menu de navegacion -->
@@ -25,7 +25,7 @@
    <li><a href="registrar.jsp">Registrar</a></li>
    <li><a href="editar.jsp">Editar</a></li>
    <li><a href="alumnosMed.jsp">Ver</a></li> 
-   <li><a href="salir">Salir</a></li> 
+   <li><a href="<%= us.createLogoutURL("/cerrarsesion")%>">Salir</a></li> 
   <%if(alumnos !=null){ %>
   	<li><a href="vaciarServlet">Vaciar</a></li>
   <%}%>
@@ -43,7 +43,7 @@
 	<td><%=a.getCorreo()%></td><td><%=a.getTipo() %></td><td><%=a.getContador() %></td><td><%=a.getAcceso() %></td>
 	</tr>
  <%}}else{%>
- 	<tr><td>No hay alumnos de medicina por mostrar</td></tr>
+ 	<tr><td>No hay alumnos por mostrar</td></tr>
   <%}%>
   </table>
   </div>
@@ -51,8 +51,7 @@
   
   
      <footer id="main-footer">
-        <p>Hecho por:<br>-Contreras Iam<br>-Solis Angie<br>-Carpio
-				Yherico<br>-Veliz Diego<br>-Nuñez Gary</p>
+       
     </footer>
   </body>
 </html>

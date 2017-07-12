@@ -29,16 +29,15 @@
    <ul id="navbar">
    <li><a href="buscar.jsp">Buscar</a></li>
    <li><a href="registrar.jsp">Registrar</a></li>
+    <li><a href="inicio.html">MATRICULAR ALUMNO</a></li>
    <li><a href="editar.jsp">Editar</a></li>
    <li><a href="alumnosMed.jsp">Ver</a></li> 
      <li><a href="salir">Salir</a></li> 
    </ul>
    </nav>
 	 </header>
-	 
     <div id="fondoFormulario2"></div>
     <div id="form">
-    	
 	    <form id="formulario" action="registrar" method="POST" > 
 		<table>
 		<tr>
@@ -56,8 +55,6 @@
 				</select></br>
 				</td>
       	</tr>
-      	
-		
 			</br></br></br></br>
 			<tr>
             <td align=center>
@@ -66,12 +63,10 @@
       	</tr>
 		</table>
 		</form>
-		
 	</div>
 	
 	<footer id="main-footer2">
-        <p>Hecho por:<br>-Contreras Iam<br>-Solis Angie<br>-Carpio
-				Yherico<br>-Veliz Diego<br>-Nuñez Gary</p>
+        <p>Hecho por:<br>-Contreras Iam<br>-Solis Angie<br>Veliz Diego<br>-Nuñez Gary</p>
     </footer>
   </body>
 </html>

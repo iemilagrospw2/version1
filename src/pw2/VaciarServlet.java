@@ -11,9 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.google.appengine.api.users.User;
 import com.google.appengine.api.users.UserService;
 import com.google.appengine.api.users.UserServiceFactory;
-
-
-
 @SuppressWarnings("serial")
 public class VaciarServlet extends HttpServlet {
 	@SuppressWarnings("unchecked")
@@ -24,7 +21,7 @@ public class VaciarServlet extends HttpServlet {
 		String sesion=(String)(getServletContext().getAttribute("sesion"));
 		if(sesion.equals("administrador") && user!=null) {
 			resp.getWriter().println(" <html>"+
-					 "<head>"+
+					"<head>"+
 			"		<meta http-equip='Content-type' content='text/html;charset=UTF-8'>"+
 			"		<link href='css/default.css' rel='stylesheet' type='text/css'>"+
 			"			<title>Buscar</title>"+

@@ -39,7 +39,8 @@ public class Login2Servlet extends HttpServlet {
 					getServletContext().setAttribute("sesion",ok.getTipo());
 					break;
 				}
-			}}
+			}
+		}
  		if(encontro){
 		 out.println("<!DOCTYPE html>"	 
 		 + "<html>"
@@ -67,14 +68,17 @@ public class Login2Servlet extends HttpServlet {
 		 + "</body></html>");
  		}
  		else{
- 			 out.println("<!DOCTYPE html>"	 
- 					 + "<html>"
- 					 + "<head><title>InformaciÃ³n de la cuenta</title>"
- 					 + "<meta charset=utf-8;>"
- 					 + "<body>"
- 					 + "<h1>Usted no se encuentra registrado</h1>"
- 					 +"<a href='"+ us.createLogoutURL(req.getRequestURI())+"'> volver </a>"
- 					 + "</body></html>");	
+ 			out.println("<!DOCTYPE html>"	 
+					 + "<html>"
+					 + "<head><title>SDP-WebSystem</title>"
+					 + "<meta charset=utf-8;></head>"
+					 + "<link rel='stylesheet' href='css/estyle.css'>"
+					 + "<body>"
+					 + "<div id='body'>"
+					 + "<a href='"+ us.createLogoutURL("/cerrarsesion")+"' class='button large'><span class='icon-code'>Cerrar sesión</span></a>"
+					 + "<h3>No perteneces al sistema</h3>"
+					 + "</div>"
+					 + "</body></html>");	
  		}
  	}
  }

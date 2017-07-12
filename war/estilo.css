@@ -1,0 +1,175 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family:verdana;
+}
+
+body {
+    position: absolute;
+    font-family: 'Times New Roman',sans-serif;
+    font-size: 0,2em;
+    background-image:url(manzana.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 100% 100%, auto;
+    width: 100%;
+   	margin : 0px;
+   	height:100%;
+}
+
+/*Cabecera*/
+#main-header {
+    background: #333;
+    color: white;
+    height: 60px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+    #main-header a {
+        color: white;
+    }
+/* Logo */
+#logo-header {
+    float: left;
+    padding: 15px 0 0 350px;
+    text-decoration: none;
+}
+
+    #logo-header:hover {
+        color: #0b76a6;
+    }
+
+    #logo-header .site-name {
+        display: block;
+        font-weight: 700;
+        font-size: 1.2em;
+        font-style: oblique;
+        text-decoration: dashed;
+    }
+
+    #logo-header .site-desc {
+        display: block;
+        font-weight: 300;
+        font-style: oblique;
+        font-size: 0.8em;
+        color: #999;
+    }
+/*Navegación*/
+nav {
+    float: right;
+}
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding-right: 20px;
+    }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 60px;
+        }
+
+            nav ul li a {
+                display: block;
+                padding: 0 10px;
+                text-decoration: none;
+            }
+
+                nav ul li a:hover {
+                    background: #0b76a6;
+                }
+
+/**menu*/
+
+aside{
+	position:fixed;
+	width:300px;
+	height:100%;
+	background-color:#2d2d2d;
+}
+
+aside ul{
+	margin-top:50px;
+	list-style:none;
+	display:block;
+}
+aside ul li{
+	width:100%;
+	height:50px;
+	border-bottom:1px solid #323232;
+	overflow:hidden;
+}
+
+aside imagen1{
+	padding-right:1%;
+	padding-right:5%;
+}
+
+p.menu{
+		position:relative;
+		padding:16px;
+		padding-right:25px;
+		float:right;
+		color:white;
+		opacity: .6;
+		font-size:1,2em;
+}
+
+div.barra{
+		position:absolute;
+		height:50px;
+		width:0px;
+		background-color:#aaa;
+		opacity: .1;
+		-webkit-transition:width .2s;
+}
+
+li:hover div.barra{
+	width:300px;
+}
+
+div.contenedor{
+	font-size:20px;
+	display:line-block;
+	padding:500xp;
+	height:130px;
+	margin-top:20%;
+	margin-left:50%;
+	background-repeat: no-repeat;
+	font-family: fantasy;
+}
+
+div#datos{
+	font-size:30px;
+	display:line-block;
+	padding:500xp;
+	height:130px;
+	margin-top:10%;
+	margin-left:30%;
+	background-repeat: no-repeat;
+	font-family: fantasy;
+}
+table{
+	color:white;
+	font-size:30px;
+}
+
+/*Pie de Pagina*/
+#main-footer {
+    background: #323232;
+    color: white;
+    height: 80px;
+    width: 100%;
+    left: 0;
+	position: absolute;
+	bottom:0px;
+    text-align: center;
+    margin-top: 10px;
+	background-attachment: fixed;
+}
